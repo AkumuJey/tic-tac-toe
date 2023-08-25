@@ -3,24 +3,24 @@ export default function Board() {
   return (
     <div>
       <div className="board-row">
-        <Square className="square"/>
-        <Square className="square"/>
-        <Square className="square"/>
+        <Square/>
+        <Square/>
+        <Square/>
       </div>
       <div className="board-row">
-        <Square className="square"/>
-        <Square className="square"/>
-        <Square className="square"/>
+        <Square/>
+        <Square/>
+        <Square/>
       </div>
       <div className="board-row">
-        <Square className="square"/>
-        <Square className="square"/>
-        <Square className="square"/>
+        <Square/>
+        <Square/>
+        <Square/>
       </div>
     </div>
   );
 }
 
-function Square () {
-  return <button>1</button>
+function Square ({value}) {
+  return <button className="square">1</button>
 }
