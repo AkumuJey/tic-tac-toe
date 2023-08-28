@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Fragment } from "react";
 
 function Square ({value, onSquareClick}) {
   return (
@@ -36,7 +37,7 @@ export default function Board() {
     status = `Next player: ${xIsNext ? "X" : "O"}`
   }
   return (
-    <div>
+    <Fragment>
       <div>{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)}/>
@@ -53,7 +54,7 @@ export default function Board() {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)}/>
         <Square value={squares[8]}onSquareClick={() => handleClick(8)}/>
       </div>
-    </div>
+    </Fragment>
   );
 }
 
